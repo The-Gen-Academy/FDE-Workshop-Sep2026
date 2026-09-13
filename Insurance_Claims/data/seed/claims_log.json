@@ -1,0 +1,62 @@
+{
+  "CLM-4F88A21C": {
+    "claim_id": "CLM-4F88A21C",
+    "policy_number": "POL-100234",
+    "system_priority": "low",
+    "final_decision": "approved:499.75",
+    "matched_system_suggestion": true,
+    "override_reason": "",
+    "logged_at": "2026-07-10T15:02:11.000000",
+    "auto_approved": true
+  },
+  "CLM-3391A7C2": {
+    "claim_id": "CLM-3391A7C2",
+    "policy_number": "POL-100555",
+    "system_priority": "high",
+    "final_decision": "approved:10000.0",
+    "matched_system_suggestion": false,
+    "override_reason": "",
+    "adjuster_notes": "",
+    "logged_at": "2026-07-28T16:16:25.572671"
+  },
+  "CLM-0E4CAEA4": {
+    "claim_id": "CLM-0E4CAEA4",
+    "policy_number": "POL-100234",
+    "system_priority": "low",
+    "final_decision": "approved:564.25",
+    "matched_system_suggestion": true,
+    "override_reason": "",
+    "logged_at": "2026-07-29T06:34:55.192403",
+    "auto_approved": true
+  },
+  "CLM-C3814923": {
+    "claim_id": "CLM-C3814923",
+    "policy_number": "POL-100234",
+    "system_priority": "low",
+    "final_decision": "approved:499.75",
+    "matched_system_suggestion": true,
+    "override_reason": "",
+    "logged_at": "2026-07-29T08:00:09.963711",
+    "auto_approved": true
+  },
+  "CLM-88420AF1": {
+    "claim_id": "CLM-88420AF1",
+    "policy_number": "POL-100987",
+    "system_priority": "high",
+    "final_decision": "approved:15000.0",
+    "matched_system_suggestion": true,
+    "override_reason": "",
+    "adjuster_notes": "",
+    "logged_at": "2026-07-30T00:08:23.595656"
+  },
+  "CLM-93776584": {
+    "claim_id": "CLM-93776584",
+    "policy_number": "POL-100234",
+    "system_priority": "high",
+    "final_decision": "denied",
+    "matched_system_suggestion": true,
+    "override_reason": "",
+    "logged_at": "2026-07-30T03:57:48.779980",
+    "auto_denied": true
+  }
+}

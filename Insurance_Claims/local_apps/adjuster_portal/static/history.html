@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Resolved — Adjuster Portal</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <span class="brand">Meridian Claims — Adjuster Portal</span>
+    <nav>
+      <a href="queue.html">Queue</a>
+      <a href="history.html" class="active">Resolved</a>
+      <a href="policies.html">Policies</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Resolved Claims</h1>
+    <div class="toolbar">
+      <label>From <input type="date" id="dateFrom" /></label>
+      <label>To <input type="date" id="dateTo" /></label>
+      <label><input type="checkbox" id="overrideOnly" /> Overrides only</label>
+      <button id="refreshBtn">Refresh</button>
+    </div>
+    <div id="rows"></div>
+  </main>
+
+  <script src="js/api.js"></script>
+  <script src="js/format.js"></script>
+  <script src="js/history.js"></script>
+</body>
+</html>

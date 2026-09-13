@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Policies — Adjuster Portal</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <span class="brand">Meridian Claims — Adjuster Portal</span>
+    <nav>
+      <a href="queue.html">Queue</a>
+      <a href="history.html">Resolved</a>
+      <a href="policies.html" class="active">Policies</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Policies</h1>
+
+    <div class="card section">
+      <h2>New policy</h2>
+      <div class="decision-form" style="max-width:640px">
+        <div>
+          <label for="policyholderName">Policyholder name</label>
+          <input type="text" id="policyholderName" placeholder="e.g. Helen Parr" />
+        </div>
+        <div>
+          <label for="vin">VIN</label>
+          <input type="text" id="vin" placeholder="e.g. 1HGCM82633A004352" />
+        </div>
+        <div>
+          <label for="listedDrivers">Listed drivers (comma-separated)</label>
+          <input type="text" id="listedDrivers" placeholder="e.g. Helen Parr, Bob Parr" />
+        </div>
+        <div class="fact-grid">
+          <div>
+            <label for="deductible">Deductible</label>
+            <input type="number" id="deductible" step="0.01" value="500" />
+          </div>
+          <div>
+            <label for="limits">Coverage limit</label>
+            <input type="number" id="limits" step="0.01" value="25000" />
+          </div>
+          <div>
+            <label for="effectiveDate">Effective date</label>
+            <input type="date" id="effectiveDate" />
+          </div>
+          <div>
+            <label for="expirationDate">Expiration date</label>
+            <input type="date" id="expirationDate" />
+          </div>
+        </div>
+        <div>
+          <label><input type="checkbox" id="collision" checked /> Collision coverage</label>
+          <label><input type="checkbox" id="comprehensive" checked /> Comprehensive coverage</label>
+        </div>
+        <div>
+          <label>Exclusions</label><br />
+          <label><input type="checkbox" class="exclusion" value="racing" checked /> Racing / competitive driving</label><br />
+          <label><input type="checkbox" class="exclusion" value="commercial_use" checked /> Commercial use</label><br />
+          <label><input type="checkbox" class="exclusion" value="unlisted_driver" checked /> Unlisted driver</label>
+        </div>
+        <div id="formError" class="badge-danger" style="display:none"></div>
+        <div>
+          <button type="button" id="createBtn" class="primary">Create policy</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card section">
+      <h2>Existing policies</h2>
+      <div id="rows"></div>
+    </div>
+  </main>
+
+  <script src="js/api.js"></script>
+  <script src="js/format.js"></script>
+  <script src="js/policies.js"></script>
+</body>
+</html>

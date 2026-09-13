@@ -1,0 +1,13 @@
+.venv/
+.local/
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+.adk/
+__pycache__/
+*.pyc
+.env
+dist/
+*.egg-info/
+secrets/
+.claude/settings.local.json

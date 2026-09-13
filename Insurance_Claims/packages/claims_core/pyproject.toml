@@ -1,0 +1,18 @@
+[project]
+name = "claims-core"
+version = "0.1.0"
+description = "Claims rules, records, and evidence storage"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "google-cloud-firestore>=2.21.0,<3",
+  "google-cloud-storage>=2.10.0,<4",
+  "python-dotenv>=1.0.0",
+]
+
+[project.scripts]
+claims-data = "claims_core.seed:main"
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13"]
+build-backend = "uv_build"

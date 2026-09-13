@@ -1,0 +1,2008 @@
+{
+  "CLM-4F88A21C": {
+    "claim_id": "CLM-4F88A21C",
+    "status": "auto_approved",
+    "incident": {
+      "incident_date": "2026-07-10",
+      "incident_time": "14:30",
+      "location": "Main St & 3rd, Springfield",
+      "description": "Rear-ended at a stoplight, bumper and taillight damage.",
+      "driver_name": "Helen Parr",
+      "is_drivable": true,
+      "anyone_injured": false,
+      "other_party_involved": true,
+      "other_party_info": "Other driver: Jane Doe, insured with Acme Mutual",
+      "police_report_filed": true
+    },
+    "policy_number": "POL-100234",
+    "policy": {
+      "policyholder_id": "CUST-5521",
+      "policyholder_name": "Helen Parr",
+      "vin": "1HGCM82633A004352",
+      "listed_drivers": [
+        "Helen Parr",
+        "Bob Parr"
+      ],
+      "coverage": {
+        "collision": true,
+        "comprehensive": true,
+        "deductible": 500,
+        "limits": 25000
+      },
+      "effective_date": "2025-01-01",
+      "expiration_date": "2027-01-01",
+      "exclusions": [
+        "racing",
+        "commercial_use",
+        "unlisted_driver"
+      ]
+    },
+    "evidence": {
+      "photo_descriptions": [
+        "rear bumper cracked",
+        "taillight housing scratched"
+      ],
+      "consistency_score": 1.0,
+      "consistency_note": "",
+      "odometer_reading": 32000,
+      "vin": "1HGCM82633A004352",
+      "vin_match": true
+    },
+    "coverage_result": {
+      "status": "covered",
+      "reason": "Collision coverage applies; policy active on date of loss; no exclusions triggered (Rear-ended at a stoplight by another driver; no racing, commercial use, or other exclusionary conduct described.).",
+      "deductible": 500,
+      "cause_covered": true,
+      "coverage_confidence": 0.98
+    },
+    "risk_result": {
+      "risk_flag": "clean",
+      "reason": "No unusual claim frequency or pattern found."
+    },
+    "cost_estimate": {
+      "priced_parts": [
+        "rear_bumper",
+        "taillight"
+      ],
+      "unknown_parts": [],
+      "part_provenance": {
+        "rear_bumper": {
+          "provenance": "photo_confirmed",
+          "score": 1.0
+        },
+        "taillight": {
+          "provenance": "photo_confirmed",
+          "score": 1.0
+        }
+      },
+      "estimated_cost_low": 837.0,
+      "estimated_cost_high": 1162.5,
+      "policy_limit": 25000,
+      "exceeds_limit": false,
+      "insurable_amount": 1162.5
+    },
+    "priority_result": {
+      "priority": "low",
+      "reason": "Coverage is clear, no risk flags, and cost is within the low-priority range."
+    },
+    "recommendation": {
+      "recommended_action": "approve",
+      "recommended_amount": 499.75,
+      "reason": "Coverage is covered and risk is clean (priority: low)."
+    },
+    "queued_at": "2026-07-10T15:02:11.000000",
+    "resolved_at": "2026-07-10T15:02:11.000000"
+  },
+  "CLM-88420AF1": {
+    "claim_id": "CLM-88420AF1",
+    "status": "resolved",
+    "incident": {
+      "incident_date": "2026-07-15",
+      "incident_time": "08:10",
+      "location": "Highway 41 near Exit 12",
+      "description": "Car spun out in the rain and struck a guardrail head-on; the shop said it may be a total loss.",
+      "driver_name": "Lucius Best",
+      "is_drivable": false,
+      "anyone_injured": false,
+      "other_party_involved": false,
+      "other_party_info": "",
+      "police_report_filed": true
+    },
+    "policy_number": "POL-100987",
+    "policy": {
+      "policyholder_id": "CUST-7743",
+      "policyholder_name": "Lucius Best",
+      "vin": "2T1BURHE0JC014589",
+      "listed_drivers": [
+        "Lucius Best"
+      ],
+      "coverage": {
+        "collision": true,
+        "comprehensive": false,
+        "deductible": 1000,
+        "limits": 15000
+      },
+      "effective_date": "2026-06-20",
+      "expiration_date": "2027-06-20",
+      "exclusions": [
+        "racing",
+        "commercial_use",
+        "unlisted_driver"
+      ]
+    },
+    "evidence": {
+      "photo_descriptions": [
+        "front bumper crushed",
+        "hood buckled",
+        "airbags deployed"
+      ],
+      "consistency_score": 0.9,
+      "consistency_note": "",
+      "odometer_reading": 41210,
+      "vin": "2T1BURHE0JC014589",
+      "vin_match": true
+    },
+    "coverage_result": {
+      "status": "covered",
+      "reason": "Collision coverage applies; policy active on date of loss; no exclusions triggered (Single-vehicle loss of control in wet conditions striking a guardrail; no racing or commercial-use language in the description.).",
+      "deductible": 1000,
+      "cause_covered": true,
+      "coverage_confidence": 0.95
+    },
+    "risk_result": {
+      "risk_flag": "needs_closer_look",
+      "reason": "2 claims filed by this policyholder within the last 365 days: ['CLM-90002', 'CLM-90003']. Policy was only 25 day(s) old on the date of loss (effective 2026-06-20). VIN 2T1BURHE0JC014589 has prior claim(s) under a different policyholder: ['CLM-77001DE2']."
+    },
+    "cost_estimate": {
+      "priced_parts": [
+        "front_bumper",
+        "hood",
+        "airbag_system",
+        "frame",
+        "engine"
+      ],
+      "unknown_parts": [],
+      "part_provenance": {
+        "front_bumper": {
+          "provenance": "photo_confirmed",
+          "score": 1.0
+        },
+        "hood": {
+          "provenance": "photo_confirmed",
+          "score": 1.0
+        },
+        "airbag_system": {
+          "provenance": "photo_confirmed",
+          "score": 1.0
+        },
+        "frame": {
+          "provenance": "claimed_only",
+          "score": 1.0
+        },
+        "engine": {
+          "provenance": "claimed_only",
+          "score": 1.0
+        }
+      },
+      "estimated_cost_low": 12267.0,
+      "estimated_cost_high": 17037.5,
+      "policy_limit": 15000,
+      "exceeds_limit": true,
+      "insurable_amount": 15000
+    },
+    "priority_result": {
+      "priority": "high",
+      "reason": "risk flag is not clean; estimated cost high end ($17037.5) exceeds 50% of the policy limit ($7,500.00); estimated cost high end ($17037.5) exceeds the policy's coverage limit ($15000)"
+    },
+    "recommendation": {
+      "recommended_action": "needs_manual_review",
+      "recommended_amount": null,
+      "reason": "risk flag is not clean; estimated cost high end ($17037.5) exceeds 50% of the policy limit ($7,500.00); estimated cost high end ($17037.5) exceeds the policy's coverage limit ($15000)"
+    },
+    "queued_at": "2026-07-15T09:40:22.000000",
+    "resolved_at": "2026-07-30T00:08:23.595656"
+  },
+  "CLM-3391A7C2": {
+    "claim_id": "CLM-3391A7C2",
+    "status": "resolved",
+    "incident": {
+      "incident_date": "2026-06-30",
+      "incident_time": "18:45",
+      "location": "Parkway Dr & 9th, Municiberg",
+      "description": "Sideswiped by another car changing lanes; driver-side doors and mirror damaged.",
+      "driver_name": "Violet Parr",
+      "is_drivable": true,
+      "anyone_injured": false,
+      "other_party_involved": true,
+      "other_party_info": "Other driver: unknown, fled the scene",
+      "police_report_filed": true
+    },
+    "policy_number": "POL-100555",
+    "policy": {
+      "policyholder_id": "CUST-3391",
+      "policyholder_name": "Violet Parr",
+      "vin": "3VWFE21C04M000123",
+      "listed_drivers": [
+        "Violet Parr"
+      ],
+      "coverage": {
+        "collision": true,
+        "comprehensive": true,
+        "deductible": 750,
+        "limits": 20000
+      },
+      "effective_date": "2025-05-01",
+      "expiration_date": "2026-05-01",
+      "exclusions": [
+        "racing",
+        "commercial_use",
+        "unlisted_driver"
+      ]
+    },
+    "evidence": {
+      "photo_descriptions": [
+        "driver-side front door dented",
+        "side mirror snapped off"
+      ],
+      "consistency_score": 0.95,
+      "consistency_note": "",
+      "odometer_reading": 28540,
+      "vin": "3VWFE21C04M000123",
+      "vin_match": true
+    },
+    "coverage_result": {
+      "status": "not_covered",
+      "reason": "Policy is not active on 2026-06-30 (active 2025-05-01 to 2026-05-01).",
+      "deductible": 750
+    },
+    "risk_result": null,
+    "cost_estimate": null,
+    "priority_result": {
+      "priority": "high",
+      "reason": "Coverage is not covered: Policy is not active on 2026-06-30 (active 2025-05-01 to 2026-05-01)."
+    },
+    "recommendation": {
+      "recommended_action": "deny",
+      "recommended_amount": null,
+      "reason": "Policy is not active on 2026-06-30 (active 2025-05-01 to 2026-05-01)."
+    },
+    "queued_at": "2026-07-01T10:15:00.000000",
+    "resolved_at": "2026-07-28T16:16:25.572671"
+  },
+  "CLM-ACFD247E": {
+    "claim_id": "CLM-ACFD247E",
+    "status": "pending_review",
+    "incident": {
+      "incident_date": "2026-07-28",
+      "incident_time": "23:00",
+      "location": "13th cross street",
+      "description": "I was driving and it was raining and I sorta slipped",
+      "driver_name": "Helen Parr",
+      "is_drivable": true,
+      "anyone_injured": false,
+      "other_party_involved": false,
+      "other_party_info": "",
+      "police_report_filed": false
+    },
+    "policy_number": "POL-100234",
+    "policy": {
+      "policyholder_id": "CUST-5521",
+      "policyholder_name": "Helen Parr",
+      "vin": "1HGCM82633A004352",
+      "listed_drivers": [
+        "Helen Parr",
+        "Bob Parr"
+      ],
+      "coverage": {
+        "collision": true,
+        "comprehensive": true,
+        "deductible": 500,
+        "limits": 25000
+      },
+      "effective_date": "2025-01-01",
+      "expiration_date": "2027-01-01",
+      "exclusions": [
+        "racing",
+        "commercial_use",
+        "unlisted_driver"
+      ]
+    },
+    "evidence": {
+      "photo_descriptions": [
+        "Front bumper and grille are severely crumpled and detached, exposing internal components.",
+        "Extensive front-end damage, particularly to the front left fender and headlight area, with the bumper significantly distorted."
+      ],
+      "consistency_score": 0.9,
+      "consistency_note": "",
+      "odometer_reading": 10000,
+      "vin": "1HGCM82633A004352",
+      "vin_match": true
+    },
+    "coverage_result": {
+      "status": "covered",
+      "reason": "Collision coverage applies; policy active on date of loss; no exclusions triggered (The incident description of a hit-and-run while parked does not fall under the policy exclusions of 'racing' or 'commercial_use'.).",
+      "deductible": 500,
+      "cause_covered": true,
+      "coverage_confidence": 1
+    },
+    "risk_result": {
+      "risk_flag": "clean",
+      "reason": "No unusual claim frequency or pattern found."
+    },
+    "cost_estimate": {
+      "priced_parts": [
+        "door_panel",
+        "fender",
+        "quarter_panel"
+      ],
+      "unknown_parts": [],
+      "part_provenance": {
+        "door_panel": {
+          "provenance": "photo_confirmed",
+          "score": 1.0
+        },
+        "fender": {
+          "provenance": "claimed_only",
+          "score": 1.0
+        },
+        "quarter_panel": {
+          "provenance": "claimed_only",
+          "score": 1.0
+        }
+      },
+      "estimated_cost_low": 2322.0,
+      "estimated_cost_high": 3225.0,
+      "policy_limit": 25000,
+      "exceeds_limit": false,
+      "insurable_amount": 3225.0
+    },
+    "priority_result": {
+      "priority": "medium",
+      "reason": "Coverage is clear and risk is clean, but estimated cost high end ($3225.0) exceeds 10% of the policy limit ($2,500.00)."
+    },
+    "recommendation": {
+      "recommended_action": "approve",
+      "recommended_amount": 2273.5,
+      "reason": "Coverage is covered and risk is clean (priority: medium)."
+    },
+    "queued_at": "2026-07-28T16:33:36.188141"
+  },
+  "CLM-0C5B9E25": {
+    "claim_id": "CLM-0C5B9E25",
+    "status": "pending_review",
+    "incident": {
+      "incident_date": "2026-07-28",
+      "incident_time": "03:00",
+      "location": "13th cross street",
+      "description": "The other guy hit me while he was racing someone else",
+      "driver_name": "Bob Parr",
+      "is_drivable": false,
+      "anyone_injured": true,
+      "other_party_involved": true,
+      "other_party_info": "A Honda Civic and a Lamborghini were racing each other. The civic lost control and hit me",
+      "police_report_filed": true
+    },
+    "policy_number": "POL-100234",
+    "policy": {
+      "policyholder_id": "CUST-5521",
+      "policyholder_name": "Helen Parr",
+      "vin": "1HGCM82633A004352",
+      "listed_drivers": [
+        "Helen Parr",
+        "Bob Parr"
+      ],
+      "coverage": {
+        "collision": true,
+        "comprehensive": true,
+        "deductible": 500,
+        "limits": 25000
+      },
+      "effective_date": "2025-01-01",
+      "expiration_date": "2027-01-01",
+      "exclusions": [
+        "racing",
+        "commercial_use",
+        "unlisted_driver"
+      ]
+    },
+    "evidence": {
+      "photo_descriptions": [
+        "Heavily damaged front end with collapsed bumper and exposed engine components",
+        "Crumpled bonnet and damaged front left wheel area",
+        "Overall view of extensive front-end collision damage"
+      ],
+      "consistency_score": 0.9,
+      "consistency_note": "",
+      "odometer_reading": 20000,
+      "vin": "1HGCM82633A004352",
+      "vin_match": true
+    },
+    "coverage_result": {
+      "status": "covered",
+      "reason": "Collision coverage applies; policy active on date of loss; no exclusions triggered (The incident description states the insured swerved to avoid a deer and hit a tree, which does not fall under any of the policy exclusions like racing or commercial use.).",
+      "deductible": 500,
+      "cause_covered": true,
+      "coverage_confidence": 1
+    },
+    "risk_result": {
+      "risk_flag": "clean",
+      "reason": "No unusual claim frequency or pattern found."
+    },
+    "cost_estimate": {
+      "priced_parts": [
+        "front_bumper",
+        "hood",
+        "windshield"
+      ],
+      "unknown_parts": [],
+      "part_provenance": {
+        "front_bumper": {
+          "provenance": "photo_confirmed",
+          "score": 1.0
+        },
+        "hood": {
+          "provenance": "photo_confirmed",
+          "score": 1.0
+        },
+        "windshield": {
+          "provenance": "claimed_only",
+          "score": 1.0
+        }
+      },
+      "estimated_cost_low": 2016.0,
+      "estimated_cost_high": 2800.0,
+      "policy_limit": 25000,
+      "exceeds_limit": false,
+      "insurable_amount": 2800.0
+    },
+    "priority_result": {
+      "priority": "medium",
+      "reason": "Coverage is clear and risk is clean, but estimated cost high end ($2800.0) exceeds 10% of the policy limit ($2,500.00)."
+    },
+    "recommendation": {
+      "recommended_action": "approve",
+      "recommended_amount": 1908.0,
+      "reason": "Coverage is covered and risk is clean (priority: medium)."
+    },
+    "queued_at": "2026-07-29T02:49:59.976532"
+  },
+  "CLM-0E4CAEA4": {
+    "claim_id": "CLM-0E4CAEA4",
+    "status": "auto_approved",
+    "incident": {
+      "incident_date": "2026-07-23",
+      "incident_time": "14:00",
+      "location": "15th avenue",
+      "description": "Another guy hit the car",
+      "driver_name": "Helen Parr",
+      "is_drivable": false,
+      "anyone_injured": false,
+      "other_party_involved": true,
+      "other_party_info": "Toyota Camry, license plate TN 05 22 2245",
+      "police_report_filed": false
+    },
+    "policy_number": "POL-100234",
+    "policy": {
+      "policyholder_id": "CUST-5521",
+      "policyholder_name": "Helen Parr",
+      "vin": "1HGCM82633A004352",
+      "listed_drivers": [
+        "Helen Parr",
+        "Bob Parr"
+      ],
+      "coverage": {
+        "collision": true,
+        "comprehensive": true,
+        "deductible": 500,
+        "limits": 25000
+      },
+      "effective_date": "2025-01-01",
+      "expiration_date": "2027-01-01",
+      "exclusions": [
+        "racing",
+        "commercial_use",
+        "unlisted_driver"
+      ]
+    },
+    "evidence": {
+      "photo_descriptions": [
+        "Front left of car with severely crumpled bumper, shattered headlight, damaged wheel/tire, and exposed engine components.",
+        "Close-up of the front left damage, showing crumpled bumper, shattered headlight, and creased bonnet.",
+        "Overall view of the front of the car, highlighting the extensive damage to the front left side."
+      ],
+      "consistency_score": 1,
+      "consistency_note": "",
+      "odometer_reading": 2,
+      "vin": "1HGCM82633A004352",
+      "vin_match": true
+    },
+    "coverage_result": {
+      "status": "covered",
+      "reason": "Collision coverage applies; policy active on date of loss; no exclusions triggered (The incident description does not indicate any of the policy exclusions (racing, commercial use).).",
+      "deductible": 500,
+      "cause_covered": true,
+      "coverage_confidence": 1
+    },
+    "risk_result": {
+      "risk_flag": "clean",
+      "reason": "No unusual claim frequency or pattern found."
+    },
+    "cost_estimate": {
+      "priced_parts": [
+        "front_bumper",
+        "headlight"
+      ],
+      "unknown_parts": [],
+      "part_provenance": {
+        "front_bumper": {
+          "provenance": "photo_confirmed",
+          "score": 1.0
+        },
+        "headlight": {
+          "provenance": "photo_confirmed",
+          "score": 1.0
+        }
+      },
+      "estimated_cost_low": 891.0,
+      "estimated_cost_high": 1237.5,
+      "policy_limit": 25000,
+      "exceeds_limit": false,
+      "insurable_amount": 1237.5
+    },
+    "priority_result": {
+      "priority": "low",
+      "reason": "Coverage is clear, no risk flags, and cost is within the low-priority range."
+    },
+    "recommendation": {
+      "recommended_action": "approve",
+      "recommended_amount": 564.25,
+      "reason": "Coverage is covered and risk is clean (priority: low)."
+    },
+    "queued_at": "2026-07-29T06:34:55.192403",
+    "resolved_at": "2026-07-29T06:34:55.192403"
+  },
+  "CLM-C3814923": {
+    "claim_id": "CLM-C3814923",
+    "status": "auto_approved",
+    "incident": {
+      "incident_date": "2026-07-20",
+      "incident_time": "10:00",
+      "location": "Test Ave",
+      "description": "Rear-ended at a light",
+      "driver_name": "Helen Parr",
+      "is_drivable": true,
+      "anyone_injured": false,
+      "other_party_involved": false,
+      "other_party_info": "",
+      "police_report_filed": true
+    },
+    "policy_number": "POL-100234",
+    "policy": {
+      "policyholder_id": "CUST-5521",
+      "policyholder_name": "Helen Parr",
+      "vin": "1HGCM82633A004352",
+      "listed_drivers": [
+        "Helen Parr",
+        "Bob Parr"
+      ],
+      "coverage": {
+        "collision": true,
+        "comprehensive": true,
+        "deductible": 500,
+        "limits": 25000
+      },
+      "effective_date": "2025-01-01",
+      "expiration_date": "2027-01-01",
+      "exclusions": [
+        "racing",
+        "commercial_use",
+        "unlisted_driver"
+      ]
+    },
+    "evidence": {
+      "photo_descriptions": [
+        "rear bumper scratched",
+        "taillight cracked"
+      ],
+      "consistency_score": 1.0,
+      "consistency_note": "",
+      "odometer_reading": 31000,
+      "vin": "1HGCM82633A004352",
+      "vin_match": true
+    },
+    "coverage_result": {
+      "status": "covered",
+      "reason": "Collision coverage applies; policy active on date of loss; no exclusions triggered (clean rear-end, no exclusions).",
+      "deductible": 500,
+      "cause_covered": true,
+      "coverage_confidence": 0.95
+    },
+    "risk_result": {
+      "risk_flag": "clean",
+      "reason": "No unusual claim frequency or pattern found."
+    },
+    "cost_estimate": {
+      "priced_parts": [
+        "rear_bumper",
+        "taillight"
+      ],
+      "unknown_parts": [],
+      "part_provenance": {
+        "rear_bumper": {
+          "provenance": "photo_confirmed",
+          "score": 1.0
+        },
+        "taillight": {
+          "provenance": "photo_confirmed",
+          "score": 1.0
+        }
+      },
+      "estimated_cost_low": 837.0,
+      "estimated_cost_high": 1162.5,
+      "policy_limit": 25000,
+      "exceeds_limit": false,
+      "insurable_amount": 1162.5
+    },
+    "priority_result": {
+      "priority": "low",
+      "reason": "Coverage is clear, no risk flags, and cost is within the low-priority range."
+    },
+    "recommendation": {
+      "recommended_action": "approve",
+      "recommended_amount": 499.75,
+      "reason": "Coverage is covered and risk is clean (priority: low)."
+    },
+    "queued_at": "2026-07-29T08:00:09.963711",
+    "resolved_at": "2026-07-29T08:00:09.963711"
+  },
+  "CLM-225222F9": {
+    "claim_id": "CLM-225222F9",
+    "status": "pending_review",
+    "incident": {
+      "incident_date": "2026-07-21",
+      "incident_time": "10:00",
+      "location": "Test Ave",
+      "description": "Side collision",
+      "driver_name": "Helen Parr",
+      "is_drivable": true,
+      "anyone_injured": false,
+      "other_party_involved": false,
+      "other_party_info": "",
+      "police_report_filed": true
+    },
+    "policy_number": "POL-100234",
+    "policy": {
+      "policyholder_id": "CUST-5521",
+      "policyholder_name": "Helen Parr",
+      "vin": "1HGCM82633A004352",
+      "listed_drivers": [
+        "Helen Parr",
+        "Bob Parr"
+      ],
+      "coverage": {
+        "collision": true,
+        "comprehensive": true,
+        "deductible": 500,
+        "limits": 25000
+      },
+      "effective_date": "2025-01-01",
+      "expiration_date": "2027-01-01",
+      "exclusions": [
+        "racing",
+        "commercial_use",
+        "unlisted_driver"
+      ]
+    },
+    "evidence": {
+      "photo_descriptions": [
+        "door panel dented",
+        "fender crumpled"
+      ],
+      "consistency_score": 1.0,
+      "consistency_note": "",
+      "odometer_reading": 31200,
+      "vin": "1HGCM82633A004352",
+      "vin_match": true
+    },
+    "coverage_result": {
+      "status": "covered",
+      "reason": "Collision coverage applies; policy active on date of loss; no exclusions triggered (clean side collision).",
+      "deductible": 500,
+      "cause_covered": true,
+      "coverage_confidence": 0.95
+    },
+    "risk_result": {
+      "risk_flag": "clean",
+      "reason": "No unusual claim frequency or pattern found."
+    },
+    "cost_estimate": {
+      "priced_parts": [
+        "door_panel",
+        "fender",
+        "quarter_panel"
+      ],
+      "unknown_parts": [],
+      "part_provenance": {
+        "door_panel": {
+          "provenance": "photo_confirmed",
+          "score": 1.0
+        },
+        "fender": {
+          "provenance": "photo_confirmed",
+          "score": 1.0
+        },
+        "quarter_panel": {
+          "provenance": "photo_confirmed",
+          "score": 1.0
+        }
+      },
+      "estimated_cost_low": 2322.0,
+      "estimated_cost_high": 3225.0,
+      "policy_limit": 25000,
+      "exceeds_limit": false,
+      "insurable_amount": 3225.0
+    },
+    "priority_result": {
+      "priority": "medium",
+      "reason": "Coverage is clear and risk is clean, but estimated cost high end ($3225.0) exceeds 10% of the policy limit ($2,500.00)."
+    },
+    "recommendation": {
+      "recommended_action": "approve",
+      "recommended_amount": 2273.5,
+      "reason": "Coverage is covered and risk is clean (priority: medium)."
+    },
+    "queued_at": "2026-07-29T08:00:10.011594"
+  },
+  "CLM-03AEE2C4": {
+    "claim_id": "CLM-03AEE2C4",
+    "status": "pending_review",
+    "incident": {
+      "incident_date": "2026-07-22",
+      "incident_time": "10:00",
+      "location": "Test Ave",
+      "description": "Severe frontal collision, likely total loss",
+      "driver_name": "Helen Parr",
+      "is_drivable": false,
+      "anyone_injured": false,
+      "other_party_involved": false,
+      "other_party_info": "",
+      "police_report_filed": true
+    },
+    "policy_number": "POL-100234",
+    "policy": {
+      "policyholder_id": "CUST-5521",
+      "policyholder_name": "Helen Parr",
+      "vin": "1HGCM82633A004352",
+      "listed_drivers": [
+        "Helen Parr",
+        "Bob Parr"
+      ],
+      "coverage": {
+        "collision": true,
+        "comprehensive": true,
+        "deductible": 500,
+        "limits": 25000
+      },
+      "effective_date": "2025-01-01",
+      "expiration_date": "2027-01-01",
+      "exclusions": [
+        "racing",
+        "commercial_use",
+        "unlisted_driver"
+      ]
+    },
+    "evidence": {
+      "photo_descriptions": [
+        "frame bent",
+        "engine bay crushed",
+        "airbags deployed"
+      ],
+      "consistency_score": 1.0,
+      "consistency_note": "",
+      "odometer_reading": 31500,
+      "vin": "1HGCM82633A004352",
+      "vin_match": true
+    },
+    "coverage_result": {
+      "status": "covered",
+      "reason": "Collision coverage applies; policy active on date of loss; no exclusions triggered (severe frontal collision).",
+      "deductible": 500,
+      "cause_covered": true,
+      "coverage_confidence": 0.95
+    },
+    "risk_result": {
+      "risk_flag": "needs_closer_look",
+      "reason": "2 claims filed by this policyholder within the last 365 days: ['CLM-C3814923', 'CLM-225222F9']."
+    },
+    "cost_estimate": {
+      "priced_parts": [
+        "frame",
+        "engine",
+        "airbag_system"
+      ],
+      "unknown_parts": [],
+      "part_provenance": {
+        "frame": {
+          "provenance": "photo_confirmed",
+          "score": 1.0
+        },
+        "engine": {
+          "provenance": "photo_confirmed",
+          "score": 1.0
+        },
+        "airbag_system": {
+          "provenance": "photo_confirmed",
+          "score": 1.0
+        }
+      },
+      "estimated_cost_low": 10728.0,
+      "estimated_cost_high": 14900.0,
+      "policy_limit": 25000,
+      "exceeds_limit": false,
+      "insurable_amount": 14900.0
+    },
+    "priority_result": {
+      "priority": "high",
+      "reason": "risk flag is not clean; estimated cost high end ($14900.0) exceeds 50% of the policy limit ($12,500.00)"
+    },
+    "recommendation": {
+      "recommended_action": "needs_manual_review",
+      "recommended_amount": null,
+      "reason": "risk flag is not clean; estimated cost high end ($14900.0) exceeds 50% of the policy limit ($12,500.00)"
+    },
+    "queued_at": "2026-07-29T08:00:10.069882"
+  },
+  "CLM-364061A2": {
+    "claim_id": "CLM-364061A2",
+    "status": "pending_review",
+    "incident": {
+      "incident_date": "2026-07-23",
+      "incident_time": "10:00",
+      "location": "Test Ave",
+      "description": "Fender bender",
+      "driver_name": "A Random Stranger",
+      "is_drivable": true,
+      "anyone_injured": false,
+      "other_party_involved": false,
+      "other_party_info": "",
+      "police_report_filed": true
+    },
+    "policy_number": "POL-100234",
+    "policy": {
+      "policyholder_id": "CUST-5521",
+      "policyholder_name": "Helen Parr",
+      "vin": "1HGCM82633A004352",
+      "listed_drivers": [
+        "Helen Parr",
+        "Bob Parr"
+      ],
+      "coverage": {
+        "collision": true,
+        "comprehensive": true,
+        "deductible": 500,
+        "limits": 25000
+      },
+      "effective_date": "2025-01-01",
+      "expiration_date": "2027-01-01",
+      "exclusions": [
+        "racing",
+        "commercial_use",
+        "unlisted_driver"
+      ]
+    },
+    "evidence": {
+      "photo_descriptions": [
+        "fender scratched",
+        "wheel rim scuffed"
+      ],
+      "consistency_score": 1.0,
+      "consistency_note": "",
+      "odometer_reading": 31600,
+      "vin": "1HGCM82633A004352",
+      "vin_match": true
+    },
+    "coverage_result": {
+      "status": "needs_review",
+      "reason": "'A Random Stranger' is not on the policy's list of drivers (Helen Parr, Bob Parr).",
+      "deductible": 500
+    },
+    "risk_result": {
+      "risk_flag": "needs_closer_look",
+      "reason": "3 claims filed by this policyholder within the last 365 days: ['CLM-C3814923', 'CLM-225222F9', 'CLM-03AEE2C4']."
+    },
+    "cost_estimate": {
+      "priced_parts": [
+        "fender",
+        "wheel_rim"
+      ],
+      "unknown_parts": [],
+      "part_provenance": {
+        "fender": {
+          "provenance": "photo_confirmed",
+          "score": 1.0
+        },
+        "wheel_rim": {
+          "provenance": "photo_confirmed",
+          "score": 1.0
+        }
+      },
+      "estimated_cost_low": 819.0,
+      "estimated_cost_high": 1137.5,
+      "policy_limit": 25000,
+      "exceeds_limit": false,
+      "insurable_amount": 1137.5
+    },
+    "priority_result": {
+      "priority": "high",
+      "reason": "coverage status is 'needs_review'; risk flag is not clean"
+    },
+    "recommendation": {
+      "recommended_action": "needs_manual_review",
+      "recommended_amount": null,
+      "reason": "coverage status is 'needs_review'; risk flag is not clean"
+    },
+    "queued_at": "2026-07-29T08:00:10.130408"
+  },
+  "CLM-65B37BD4": {
+    "claim_id": "CLM-65B37BD4",
+    "status": "pending_review",
+    "incident": {
+      "incident_date": "2026-07-24",
+      "incident_time": "10:00",
+      "location": "Test Ave",
+      "description": "Parking lot scrape",
+      "driver_name": "Helen Parr",
+      "is_drivable": true,
+      "anyone_injured": false,
+      "other_party_involved": false,
+      "other_party_info": "",
+      "police_report_filed": true
+    },
+    "policy_number": "POL-100234",
+    "policy": {
+      "policyholder_id": "CUST-5521",
+      "policyholder_name": "Helen Parr",
+      "vin": "1HGCM82633A004352",
+      "listed_drivers": [
+        "Helen Parr",
+        "Bob Parr"
+      ],
+      "coverage": {
+        "collision": true,
+        "comprehensive": true,
+        "deductible": 500,
+        "limits": 25000
+      },
+      "effective_date": "2025-01-01",
+      "expiration_date": "2027-01-01",
+      "exclusions": [
+        "racing",
+        "commercial_use",
+        "unlisted_driver"
+      ]
+    },
+    "evidence": {
+      "photo_descriptions": [
+        "door scraped",
+        "side mirror cracked"
+      ],
+      "consistency_score": 1.0,
+      "consistency_note": "",
+      "odometer_reading": 31700,
+      "vin": "1FAKE00000000FAKE",
+      "vin_match": false
+    },
+    "coverage_result": {
+      "status": "needs_review",
+      "reason": "VIN on submitted evidence does not match the VIN on the policy.",
+      "deductible": 500,
+      "cause_covered": true,
+      "coverage_confidence": 0.9
+    },
+    "risk_result": {
+      "risk_flag": "needs_closer_look",
+      "reason": "4 claims filed by this policyholder within the last 365 days: ['CLM-C3814923', 'CLM-225222F9', 'CLM-03AEE2C4', 'CLM-364061A2']."
+    },
+    "cost_estimate": {
+      "priced_parts": [
+        "door_panel",
+        "side_mirror"
+      ],
+      "unknown_parts": [],
+      "part_provenance": {
+        "door_panel": {
+          "provenance": "photo_confirmed",
+          "score": 1.0
+        },
+        "side_mirror": {
+          "provenance": "photo_confirmed",
+          "score": 1.0
+        }
+      },
+      "estimated_cost_low": 936.0,
+      "estimated_cost_high": 1300.0,
+      "policy_limit": 25000,
+      "exceeds_limit": false,
+      "insurable_amount": 1300.0
+    },
+    "priority_result": {
+      "priority": "high",
+      "reason": "coverage status is 'needs_review'; risk flag is not clean"
+    },
+    "recommendation": {
+      "recommended_action": "needs_manual_review",
+      "recommended_amount": null,
+      "reason": "coverage status is 'needs_review'; risk flag is not clean"
+    },
+    "queued_at": "2026-07-29T08:00:10.203225"
+  },
+  "CLM-7D412C55": {
+    "claim_id": "CLM-7D412C55",
+    "status": "pending_review",
+    "incident": {
+      "incident_date": "2026-07-25",
+      "incident_time": "10:00",
+      "location": "Test Ave",
+      "description": "Ambiguous circumstances, possibly spirited driving",
+      "driver_name": "Helen Parr",
+      "is_drivable": true,
+      "anyone_injured": false,
+      "other_party_involved": false,
+      "other_party_info": "",
+      "police_report_filed": true
+    },
+    "policy_number": "POL-100234",
+    "policy": {
+      "policyholder_id": "CUST-5521",
+      "policyholder_name": "Helen Parr",
+      "vin": "1HGCM82633A004352",
+      "listed_drivers": [
+        "Helen Parr",
+        "Bob Parr"
+      ],
+      "coverage": {
+        "collision": true,
+        "comprehensive": true,
+        "deductible": 500,
+        "limits": 25000
+      },
+      "effective_date": "2025-01-01",
+      "expiration_date": "2027-01-01",
+      "exclusions": [
+        "racing",
+        "commercial_use",
+        "unlisted_driver"
+      ]
+    },
+    "evidence": {
+      "photo_descriptions": [
+        "bumper damaged",
+        "headlight cracked"
+      ],
+      "consistency_score": 0.9,
+      "consistency_note": "",
+      "odometer_reading": 31800,
+      "vin": "1HGCM82633A004352",
+      "vin_match": true
+    },
+    "coverage_result": {
+      "status": "needs_review",
+      "reason": "Exclusion assessment inconclusive (confidence 30%): genuinely unclear if racing was involved",
+      "deductible": 500,
+      "cause_covered": true,
+      "coverage_confidence": 0.3
+    },
+    "risk_result": {
+      "risk_flag": "needs_closer_look",
+      "reason": "5 claims filed by this policyholder within the last 365 days: ['CLM-C3814923', 'CLM-225222F9', 'CLM-03AEE2C4', 'CLM-364061A2', 'CLM-65B37BD4']."
+    },
+    "cost_estimate": {
+      "priced_parts": [
+        "front_bumper",
+        "headlight"
+      ],
+      "unknown_parts": [],
+      "part_provenance": {
+        "front_bumper": {
+          "provenance": "photo_confirmed",
+          "score": 1.0
+        },
+        "headlight": {
+          "provenance": "photo_confirmed",
+          "score": 1.0
+        }
+      },
+      "estimated_cost_low": 891.0,
+      "estimated_cost_high": 1237.5,
+      "policy_limit": 25000,
+      "exceeds_limit": false,
+      "insurable_amount": 1237.5
+    },
+    "priority_result": {
+      "priority": "high",
+      "reason": "coverage status is 'needs_review'; risk flag is not clean"
+    },
+    "recommendation": {
+      "recommended_action": "needs_manual_review",
+      "recommended_amount": null,
+      "reason": "coverage status is 'needs_review'; risk flag is not clean"
+    },
+    "queued_at": "2026-07-29T08:00:10.270074"
+  },
+  "CLM-37118C7E": {
+    "claim_id": "CLM-37118C7E",
+    "status": "pending_review",
+    "incident": {
+      "incident_date": "2026-07-26",
+      "incident_time": "10:00",
+      "location": "Test Ave",
+      "description": "Was street racing a friend and crashed",
+      "driver_name": "Helen Parr",
+      "is_drivable": true,
+      "anyone_injured": false,
+      "other_party_involved": false,
+      "other_party_info": "",
+      "police_report_filed": true
+    },
+    "policy_number": "POL-100234",
+    "policy": {
+      "policyholder_id": "CUST-5521",
+      "policyholder_name": "Helen Parr",
+      "vin": "1HGCM82633A004352",
+      "listed_drivers": [
+        "Helen Parr",
+        "Bob Parr"
+      ],
+      "coverage": {
+        "collision": true,
+        "comprehensive": true,
+        "deductible": 500,
+        "limits": 25000
+      },
+      "effective_date": "2025-01-01",
+      "expiration_date": "2027-01-01",
+      "exclusions": [
+        "racing",
+        "commercial_use",
+        "unlisted_driver"
+      ]
+    },
+    "evidence": {
+      "photo_descriptions": [
+        "front end destroyed",
+        "hood crumpled"
+      ],
+      "consistency_score": 0.95,
+      "consistency_note": "",
+      "odometer_reading": 31900,
+      "vin": "1HGCM82633A004352",
+      "vin_match": true
+    },
+    "coverage_result": {
+      "status": "not_covered",
+      "reason": "description explicitly states street racing, a listed exclusion",
+      "deductible": 500,
+      "cause_covered": false,
+      "coverage_confidence": 0.95
+    },
+    "risk_result": null,
+    "cost_estimate": null,
+    "priority_result": {
+      "priority": "high",
+      "reason": "Coverage is not covered: description explicitly states street racing, a listed exclusion"
+    },
+    "recommendation": {
+      "recommended_action": "deny",
+      "recommended_amount": null,
+      "reason": "description explicitly states street racing, a listed exclusion"
+    },
+    "queued_at": "2026-07-29T08:00:10.314999"
+  },
+  "CLM-58A59B1F": {
+    "claim_id": "CLM-58A59B1F",
+    "status": "pending_review",
+    "incident": {
+      "incident_date": "2026-07-27",
+      "incident_time": "10:00",
+      "location": "Test Ave",
+      "description": "Sideswiped by another car",
+      "driver_name": "Violet Parr",
+      "is_drivable": true,
+      "anyone_injured": false,
+      "other_party_involved": false,
+      "other_party_info": "",
+      "police_report_filed": true
+    },
+    "policy_number": "POL-100555",
+    "policy": {
+      "policyholder_id": "CUST-3391",
+      "policyholder_name": "Violet Parr",
+      "vin": "3VWFE21C04M000123",
+      "listed_drivers": [
+        "Violet Parr"
+      ],
+      "coverage": {
+        "collision": true,
+        "comprehensive": true,
+        "deductible": 750,
+        "limits": 20000
+      },
+      "effective_date": "2025-05-01",
+      "expiration_date": "2026-05-01",
+      "exclusions": [
+        "racing",
+        "commercial_use",
+        "unlisted_driver"
+      ]
+    },
+    "evidence": {
+      "photo_descriptions": [
+        "driver door dented",
+        "side mirror snapped"
+      ],
+      "consistency_score": 0.95,
+      "consistency_note": "",
+      "odometer_reading": 29000,
+      "vin": "3VWFE21C04M000123",
+      "vin_match": true
+    },
+    "coverage_result": {
+      "status": "not_covered",
+      "reason": "Policy is not active on 2026-07-27 (active 2025-05-01 to 2026-05-01).",
+      "deductible": 750
+    },
+    "risk_result": null,
+    "cost_estimate": null,
+    "priority_result": {
+      "priority": "high",
+      "reason": "Coverage is not covered: Policy is not active on 2026-07-27 (active 2025-05-01 to 2026-05-01)."
+    },
+    "recommendation": {
+      "recommended_action": "deny",
+      "recommended_amount": null,
+      "reason": "Policy is not active on 2026-07-27 (active 2025-05-01 to 2026-05-01)."
+    },
+    "queued_at": "2026-07-29T08:00:10.382570"
+  },
+  "CLM-66C3ED16": {
+    "claim_id": "CLM-66C3ED16",
+    "status": "pending_review",
+    "incident": {
+      "incident_date": "2026-07-01",
+      "incident_time": "10:00",
+      "location": "Test Ave",
+      "description": "Hail damage overnight, no collision",
+      "driver_name": "Lucius Best",
+      "is_drivable": true,
+      "anyone_injured": false,
+      "other_party_involved": false,
+      "other_party_info": "",
+      "police_report_filed": true
+    },
+    "policy_number": "POL-100987",
+    "policy": {
+      "policyholder_id": "CUST-7743",
+      "policyholder_name": "Lucius Best",
+      "vin": "2T1BURHE0JC014589",
+      "listed_drivers": [
+        "Lucius Best"
+      ],
+      "coverage": {
+        "collision": true,
+        "comprehensive": false,
+        "deductible": 1000,
+        "limits": 15000
+      },
+      "effective_date": "2026-06-20",
+      "expiration_date": "2027-06-20",
+      "exclusions": [
+        "racing",
+        "commercial_use",
+        "unlisted_driver"
+      ]
+    },
+    "evidence": {
+      "photo_descriptions": [
+        "hood dented from hail",
+        "roof dented from hail"
+      ],
+      "consistency_score": 0.9,
+      "consistency_note": "",
+      "odometer_reading": 41500,
+      "vin": "2T1BURHE0JC014589",
+      "vin_match": true
+    },
+    "coverage_result": {
+      "status": "not_covered",
+      "reason": "Policy does not include comprehensive coverage.",
+      "deductible": 1000
+    },
+    "risk_result": null,
+    "cost_estimate": null,
+    "priority_result": {
+      "priority": "high",
+      "reason": "Coverage is not covered: Policy does not include comprehensive coverage."
+    },
+    "recommendation": {
+      "recommended_action": "deny",
+      "recommended_amount": null,
+      "reason": "Policy does not include comprehensive coverage."
+    },
+    "queued_at": "2026-07-29T08:00:10.444765"
+  },
+  "CLM-2D9EC576": {
+    "claim_id": "CLM-2D9EC576",
+    "status": "pending_review",
+    "incident": {
+      "incident_date": "2026-07-05",
+      "incident_time": "10:00",
+      "location": "Test Ave",
+      "description": "Rear-ended at a light",
+      "driver_name": "Lucius Best",
+      "is_drivable": true,
+      "anyone_injured": false,
+      "other_party_involved": false,
+      "other_party_info": "",
+      "police_report_filed": true
+    },
+    "policy_number": "POL-100987",
+    "policy": {
+      "policyholder_id": "CUST-7743",
+      "policyholder_name": "Lucius Best",
+      "vin": "2T1BURHE0JC014589",
+      "listed_drivers": [
+        "Lucius Best"
+      ],
+      "coverage": {
+        "collision": true,
+        "comprehensive": false,
+        "deductible": 1000,
+        "limits": 15000
+      },
+      "effective_date": "2026-06-20",
+      "expiration_date": "2027-06-20",
+      "exclusions": [
+        "racing",
+        "commercial_use",
+        "unlisted_driver"
+      ]
+    },
+    "evidence": {
+      "photo_descriptions": [
+        "rear bumper cracked",
+        "trunk lid dented"
+      ],
+      "consistency_score": 0.95,
+      "consistency_note": "",
+      "odometer_reading": 41800,
+      "vin": "2T1BURHE0JC014589",
+      "vin_match": true
+    },
+    "coverage_result": {
+      "status": "covered",
+      "reason": "Collision coverage applies; policy active on date of loss; no exclusions triggered (clean rear-end).",
+      "deductible": 1000,
+      "cause_covered": true,
+      "coverage_confidence": 0.9
+    },
+    "risk_result": {
+      "risk_flag": "needs_closer_look",
+      "reason": "3 claims filed by this policyholder within the last 365 days: ['CLM-90002', 'CLM-90003', 'CLM-66C3ED16']. Policy was only 15 day(s) old on the date of loss (effective 2026-06-20). VIN 2T1BURHE0JC014589 has prior claim(s) under a different policyholder: ['CLM-77001DE2']."
+    },
+    "cost_estimate": {
+      "priced_parts": [
+        "rear_bumper",
+        "trunk_lid"
+      ],
+      "unknown_parts": [],
+      "part_provenance": {
+        "rear_bumper": {
+          "provenance": "photo_confirmed",
+          "score": 1.0
+        },
+        "trunk_lid": {
+          "provenance": "photo_confirmed",
+          "score": 1.0
+        }
+      },
+      "estimated_cost_low": 1224.0,
+      "estimated_cost_high": 1700.0,
+      "policy_limit": 15000,
+      "exceeds_limit": false,
+      "insurable_amount": 1700.0
+    },
+    "priority_result": {
+      "priority": "high",
+      "reason": "risk flag is not clean"
+    },
+    "recommendation": {
+      "recommended_action": "needs_manual_review",
+      "recommended_amount": null,
+      "reason": "risk flag is not clean"
+    },
+    "queued_at": "2026-07-29T08:00:10.532935"
+  },
+  "CLM-0649EB61": {
+    "claim_id": "CLM-0649EB61",
+    "status": "pending_review",
+    "incident": {
+      "incident_date": "2026-07-10",
+      "incident_time": "10:00",
+      "location": "Test Ave",
+      "description": "Minor collision",
+      "driver_name": "Lucius Best",
+      "is_drivable": true,
+      "anyone_injured": false,
+      "other_party_involved": false,
+      "other_party_info": "",
+      "police_report_filed": true
+    },
+    "policy_number": "POL-100987",
+    "policy": {
+      "policyholder_id": "CUST-7743",
+      "policyholder_name": "Lucius Best",
+      "vin": "2T1BURHE0JC014589",
+      "listed_drivers": [
+        "Lucius Best"
+      ],
+      "coverage": {
+        "collision": true,
+        "comprehensive": false,
+        "deductible": 1000,
+        "limits": 15000
+      },
+      "effective_date": "2026-06-20",
+      "expiration_date": "2027-06-20",
+      "exclusions": [
+        "racing",
+        "commercial_use",
+        "unlisted_driver"
+      ]
+    },
+    "evidence": {
+      "photo_descriptions": [
+        "hood dented",
+        "headlight cracked"
+      ],
+      "consistency_score": 0.95,
+      "consistency_note": "",
+      "odometer_reading": 42000,
+      "vin": "2T1BURHE0JC014589",
+      "vin_match": true
+    },
+    "coverage_result": {
+      "status": "covered",
+      "reason": "Collision coverage applies; policy active on date of loss; no exclusions triggered (clean collision).",
+      "deductible": 1000,
+      "cause_covered": true,
+      "coverage_confidence": 0.9
+    },
+    "risk_result": {
+      "risk_flag": "needs_closer_look",
+      "reason": "4 claims filed by this policyholder within the last 365 days: ['CLM-90002', 'CLM-90003', 'CLM-66C3ED16', 'CLM-2D9EC576']. Policy was only 20 day(s) old on the date of loss (effective 2026-06-20). VIN 2T1BURHE0JC014589 has prior claim(s) under a different policyholder: ['CLM-77001DE2']."
+    },
+    "cost_estimate": {
+      "priced_parts": [
+        "hood",
+        "headlight"
+      ],
+      "unknown_parts": [],
+      "part_provenance": {
+        "hood": {
+          "provenance": "photo_confirmed",
+          "score": 1.0
+        },
+        "headlight": {
+          "provenance": "photo_confirmed",
+          "score": 1.0
+        }
+      },
+      "estimated_cost_low": 1080.0,
+      "estimated_cost_high": 1500.0,
+      "policy_limit": 15000,
+      "exceeds_limit": false,
+      "insurable_amount": 1500.0
+    },
+    "priority_result": {
+      "priority": "high",
+      "reason": "risk flag is not clean"
+    },
+    "recommendation": {
+      "recommended_action": "needs_manual_review",
+      "recommended_amount": null,
+      "reason": "risk flag is not clean"
+    },
+    "queued_at": "2026-07-29T08:00:10.593706"
+  },
+  "CLM-7F9CD73C": {
+    "claim_id": "CLM-7F9CD73C",
+    "status": "pending_review",
+    "incident": {
+      "incident_date": "2026-07-28",
+      "incident_time": "10:00",
+      "location": "Test Ave",
+      "description": "Yet another fender bender",
+      "driver_name": "Helen Parr",
+      "is_drivable": true,
+      "anyone_injured": false,
+      "other_party_involved": false,
+      "other_party_info": "",
+      "police_report_filed": true
+    },
+    "policy_number": "POL-100234",
+    "policy": {
+      "policyholder_id": "CUST-5521",
+      "policyholder_name": "Helen Parr",
+      "vin": "1HGCM82633A004352",
+      "listed_drivers": [
+        "Helen Parr",
+        "Bob Parr"
+      ],
+      "coverage": {
+        "collision": true,
+        "comprehensive": true,
+        "deductible": 500,
+        "limits": 25000
+      },
+      "effective_date": "2025-01-01",
+      "expiration_date": "2027-01-01",
+      "exclusions": [
+        "racing",
+        "commercial_use",
+        "unlisted_driver"
+      ]
+    },
+    "evidence": {
+      "photo_descriptions": [
+        "fender scratched",
+        "bumper scuffed"
+      ],
+      "consistency_score": 1.0,
+      "consistency_note": "",
+      "odometer_reading": 32000,
+      "vin": "1HGCM82633A004352",
+      "vin_match": true
+    },
+    "coverage_result": {
+      "status": "covered",
+      "reason": "Collision coverage applies; policy active on date of loss; no exclusions triggered (clean fender bender).",
+      "deductible": 500,
+      "cause_covered": true,
+      "coverage_confidence": 0.95
+    },
+    "risk_result": {
+      "risk_flag": "needs_closer_look",
+      "reason": "7 claims filed by this policyholder within the last 365 days: ['CLM-C3814923', 'CLM-225222F9', 'CLM-03AEE2C4', 'CLM-364061A2', 'CLM-65B37BD4', 'CLM-7D412C55', 'CLM-37118C7E']."
+    },
+    "cost_estimate": {
+      "priced_parts": [
+        "fender",
+        "front_bumper"
+      ],
+      "unknown_parts": [],
+      "part_provenance": {
+        "fender": {
+          "provenance": "photo_confirmed",
+          "score": 1.0
+        },
+        "front_bumper": {
+          "provenance": "photo_confirmed",
+          "score": 1.0
+        }
+      },
+      "estimated_cost_low": 1161.0,
+      "estimated_cost_high": 1612.5,
+      "policy_limit": 25000,
+      "exceeds_limit": false,
+      "insurable_amount": 1612.5
+    },
+    "priority_result": {
+      "priority": "high",
+      "reason": "risk flag is not clean"
+    },
+    "recommendation": {
+      "recommended_action": "needs_manual_review",
+      "recommended_amount": null,
+      "reason": "risk flag is not clean"
+    },
+    "queued_at": "2026-07-29T08:00:10.665418"
+  },
+  "CLM-7B9C7D27": {
+    "claim_id": "CLM-7B9C7D27",
+    "status": "pending_review",
+    "incident": {
+      "incident_date": "2026-07-15",
+      "incident_time": "10:00",
+      "location": "Test Ave",
+      "description": "Head-on collision, engine trouble afterward",
+      "driver_name": "Helen Parr",
+      "is_drivable": false,
+      "anyone_injured": false,
+      "other_party_involved": false,
+      "other_party_info": "",
+      "police_report_filed": true
+    },
+    "policy_number": "POL-100234",
+    "policy": {
+      "policyholder_id": "CUST-5521",
+      "policyholder_name": "Helen Parr",
+      "vin": "1HGCM82633A004352",
+      "listed_drivers": [
+        "Helen Parr",
+        "Bob Parr"
+      ],
+      "coverage": {
+        "collision": true,
+        "comprehensive": true,
+        "deductible": 500,
+        "limits": 25000
+      },
+      "effective_date": "2025-01-01",
+      "expiration_date": "2027-01-01",
+      "exclusions": [
+        "racing",
+        "commercial_use",
+        "unlisted_driver"
+      ]
+    },
+    "evidence": {
+      "photo_descriptions": [
+        "front bumper crushed",
+        "hood buckled"
+      ],
+      "consistency_score": 0.9,
+      "consistency_note": "",
+      "odometer_reading": 30500,
+      "vin": "1HGCM82633A004352",
+      "vin_match": true
+    },
+    "coverage_result": {
+      "status": "covered",
+      "reason": "Collision coverage applies; policy active on date of loss; no exclusions triggered (consistent head-on collision).",
+      "deductible": 500,
+      "cause_covered": true,
+      "coverage_confidence": 0.95
+    },
+    "risk_result": {
+      "risk_flag": "needs_closer_look",
+      "reason": "8 claims filed by this policyholder within the last 365 days: ['CLM-C3814923', 'CLM-225222F9', 'CLM-03AEE2C4', 'CLM-364061A2', 'CLM-65B37BD4', 'CLM-7D412C55', 'CLM-37118C7E', 'CLM-7F9CD73C']."
+    },
+    "cost_estimate": {
+      "priced_parts": [
+        "front_bumper",
+        "hood",
+        "engine"
+      ],
+      "unknown_parts": [],
+      "part_provenance": {
+        "front_bumper": {
+          "provenance": "photo_confirmed",
+          "score": 1.0
+        },
+        "hood": {
+          "provenance": "photo_confirmed",
+          "score": 1.0
+        },
+        "engine": {
+          "provenance": "claimed_only",
+          "score": 1.0
+        }
+      },
+      "estimated_cost_low": 6885.0,
+      "estimated_cost_high": 9562.5,
+      "policy_limit": 25000,
+      "exceeds_limit": false,
+      "insurable_amount": 9562.5
+    },
+    "priority_result": {
+      "priority": "high",
+      "reason": "risk flag is not clean"
+    },
+    "recommendation": {
+      "recommended_action": "needs_manual_review",
+      "recommended_amount": null,
+      "reason": "risk flag is not clean"
+    },
+    "queued_at": "2026-07-29T08:00:10.739349"
+  },
+  "CLM-B3CCABFD": {
+    "claim_id": "CLM-B3CCABFD",
+    "status": "pending_review",
+    "incident": {
+      "incident_date": "2026-07-16",
+      "incident_time": "10:00",
+      "location": "Test Ave",
+      "description": "Minor parking-lot scrape, engine now blown",
+      "driver_name": "Helen Parr",
+      "is_drivable": true,
+      "anyone_injured": false,
+      "other_party_involved": false,
+      "other_party_info": "",
+      "police_report_filed": true
+    },
+    "policy_number": "POL-100234",
+    "policy": {
+      "policyholder_id": "CUST-5521",
+      "policyholder_name": "Helen Parr",
+      "vin": "1HGCM82633A004352",
+      "listed_drivers": [
+        "Helen Parr",
+        "Bob Parr"
+      ],
+      "coverage": {
+        "collision": true,
+        "comprehensive": true,
+        "deductible": 500,
+        "limits": 25000
+      },
+      "effective_date": "2025-01-01",
+      "expiration_date": "2027-01-01",
+      "exclusions": [
+        "racing",
+        "commercial_use",
+        "unlisted_driver"
+      ]
+    },
+    "evidence": {
+      "photo_descriptions": [
+        "small scrape on rear bumper",
+        "faint scuff on taillight"
+      ],
+      "consistency_score": 0.3,
+      "consistency_note": "customer described a minor scrape but also claims major engine damage, inconsistent",
+      "odometer_reading": 30600,
+      "vin": "1HGCM82633A004352",
+      "vin_match": true
+    },
+    "coverage_result": {
+      "status": "covered",
+      "reason": "Collision coverage applies; policy active on date of loss; no exclusions triggered (coverage itself is fine, consistency is the issue).",
+      "deductible": 500,
+      "cause_covered": true,
+      "coverage_confidence": 0.95
+    },
+    "risk_result": {
+      "risk_flag": "needs_closer_look",
+      "reason": "9 claims filed by this policyholder within the last 365 days: ['CLM-C3814923', 'CLM-225222F9', 'CLM-03AEE2C4', 'CLM-364061A2', 'CLM-65B37BD4', 'CLM-7D412C55', 'CLM-37118C7E', 'CLM-7F9CD73C', 'CLM-7B9C7D27']. Visible damage doesn't clearly match the incident description (consistency score 30%): customer described a minor scrape but also claims major engine damage, inconsistent."
+    },
+    "cost_estimate": {
+      "priced_parts": [
+        "rear_bumper",
+        "engine"
+      ],
+      "unknown_parts": [],
+      "part_provenance": {
+        "rear_bumper": {
+          "provenance": "photo_confirmed",
+          "score": 1.0
+        },
+        "engine": {
+          "provenance": "claimed_only",
+          "score": 0.3
+        }
+      },
+      "estimated_cost_low": 5994.0,
+      "estimated_cost_high": 8325.0,
+      "policy_limit": 25000,
+      "exceeds_limit": false,
+      "insurable_amount": 8325.0
+    },
+    "priority_result": {
+      "priority": "high",
+      "reason": "risk flag is not clean"
+    },
+    "recommendation": {
+      "recommended_action": "needs_manual_review",
+      "recommended_amount": null,
+      "reason": "risk flag is not clean"
+    },
+    "queued_at": "2026-07-29T08:00:10.807062"
+  },
+  "CLM-D9528CAC": {
+    "claim_id": "CLM-D9528CAC",
+    "status": "pending_review",
+    "incident": {
+      "incident_date": "2026-07-11",
+      "incident_time": "10:00",
+      "location": "Test Ave",
+      "description": "Sunroof shattered in a collision",
+      "driver_name": "Lucius Best",
+      "is_drivable": true,
+      "anyone_injured": false,
+      "other_party_involved": false,
+      "other_party_info": "",
+      "police_report_filed": true
+    },
+    "policy_number": "POL-100987",
+    "policy": {
+      "policyholder_id": "CUST-7743",
+      "policyholder_name": "Lucius Best",
+      "vin": "2T1BURHE0JC014589",
+      "listed_drivers": [
+        "Lucius Best"
+      ],
+      "coverage": {
+        "collision": true,
+        "comprehensive": false,
+        "deductible": 1000,
+        "limits": 15000
+      },
+      "effective_date": "2026-06-20",
+      "expiration_date": "2027-06-20",
+      "exclusions": [
+        "racing",
+        "commercial_use",
+        "unlisted_driver"
+      ]
+    },
+    "evidence": {
+      "photo_descriptions": [
+        "sunroof glass shattered",
+        "headliner torn"
+      ],
+      "consistency_score": 0.9,
+      "consistency_note": "",
+      "odometer_reading": 42200,
+      "vin": "2T1BURHE0JC014589",
+      "vin_match": true
+    },
+    "coverage_result": {
+      "status": "covered",
+      "reason": "Collision coverage applies; policy active on date of loss; no exclusions triggered (clean collision).",
+      "deductible": 1000,
+      "cause_covered": true,
+      "coverage_confidence": 0.9
+    },
+    "risk_result": {
+      "risk_flag": "needs_closer_look",
+      "reason": "5 claims filed by this policyholder within the last 365 days: ['CLM-90002', 'CLM-90003', 'CLM-66C3ED16', 'CLM-2D9EC576', 'CLM-0649EB61']. Policy was only 21 day(s) old on the date of loss (effective 2026-06-20). VIN 2T1BURHE0JC014589 has prior claim(s) under a different policyholder: ['CLM-77001DE2']."
+    },
+    "cost_estimate": {
+      "priced_parts": [],
+      "unknown_parts": [
+        "sunroof",
+        "headliner"
+      ],
+      "part_provenance": {
+        "sunroof": {
+          "provenance": "photo_confirmed",
+          "score": 1.0
+        },
+        "headliner": {
+          "provenance": "photo_confirmed",
+          "score": 1.0
+        }
+      },
+      "estimated_cost_low": 0.0,
+      "estimated_cost_high": 0.0,
+      "policy_limit": 15000,
+      "exceeds_limit": false,
+      "insurable_amount": 0.0
+    },
+    "priority_result": {
+      "priority": "high",
+      "reason": "risk flag is not clean"
+    },
+    "recommendation": {
+      "recommended_action": "needs_manual_review",
+      "recommended_amount": null,
+      "reason": "risk flag is not clean"
+    },
+    "queued_at": "2026-07-29T08:00:10.889574"
+  },
+  "CLM-93776584": {
+    "claim_id": "CLM-93776584",
+    "status": "auto_denied",
+    "incident": {
+      "incident_date": "2026-07-27",
+      "incident_time": "14:00",
+      "location": "Kirk Street",
+      "description": "Crashed into a pole.",
+      "driver_name": "Helen Parr",
+      "is_drivable": false,
+      "anyone_injured": false,
+      "other_party_involved": false,
+      "other_party_info": "",
+      "police_report_filed": true
+    },
+    "policy_number": "POL-100234",
+    "policy": {
+      "policyholder_id": "CUST-5521",
+      "policyholder_name": "Helen Parr",
+      "vin": "1HGCM82633A004352",
+      "listed_drivers": [
+        "Helen Parr",
+        "Bob Parr"
+      ],
+      "coverage": {
+        "collision": true,
+        "comprehensive": true,
+        "deductible": 500,
+        "limits": 25000
+      },
+      "effective_date": "2025-01-01",
+      "expiration_date": "2027-01-01",
+      "exclusions": [
+        "racing",
+        "commercial_use",
+        "unlisted_driver"
+      ]
+    },
+    "evidence": {
+      "photo_descriptions": [
+        "Front driver's side bumper is crumpled and torn, hood is bent upwards, and the headlight is shattered or missing.",
+        "Extensive damage to the front driver's side wheel well area with exposed wiring and internal components. The front driver's side tire is deflated/damaged, and the wheel is severely misaligned, indicating suspension damage.",
+        "Overall severe front-end damage, particularly on the driver's side, consistent with a major impact."
+      ],
+      "customer_damage_description": "OK, so the front bumper, the bonner, part of the windshield, rear view mirror, the headlight, tyre, part of the engine and the suspension is gone",
+      "photo_refs": [
+        "C:\\codebase\\Bob Parr Mr Incredible\\local_data\\photos\\CLM-93776584\\0.webp",
+        "C:\\codebase\\Bob Parr Mr Incredible\\local_data\\photos\\CLM-93776584\\1.webp",
+        "C:\\codebase\\Bob Parr Mr Incredible\\local_data\\photos\\CLM-93776584\\2.webp"
+      ],
+      "consistency_score": 0.95,
+      "consistency_note": "",
+      "odometer_reading": 26000,
+      "vin": "1HGCM82633A004352",
+      "vin_match": true
+    },
+    "coverage_result": {
+      "status": "covered",
+      "reason": "Comprehensive coverage applies; policy active on date of loss; no exclusions triggered (The customer swerved to avoid a deer and hit a tree, which is a covered comprehensive incident and does not fall under the policy's exclusions of racing or commercial use.).",
+      "deductible": 500,
+      "cause_covered": true,
+      "coverage_confidence": 1
+    },
+    "risk_result": {
+      "risk_flag": "needs_closer_look",
+      "reason": "10 claims filed by this policyholder within the last 365 days: ['CLM-C3814923', 'CLM-225222F9', 'CLM-03AEE2C4', 'CLM-364061A2', 'CLM-65B37BD4', 'CLM-7D412C55', 'CLM-37118C7E', 'CLM-7F9CD73C', 'CLM-7B9C7D27', 'CLM-B3CCABFD'].",
+      "hard_fraud_signals": [
+        "claim_frequency"
+      ]
+    },
+    "cost_estimate": {
+      "priced_parts": [
+        "front_bumper",
+        "headlight",
+        "hood"
+      ],
+      "unknown_parts": [
+        "radiator"
+      ],
+      "part_provenance": {
+        "front_bumper": {
+          "provenance": "photo_confirmed",
+          "score": 1.0
+        },
+        "headlight": {
+          "provenance": "photo_confirmed",
+          "score": 1.0
+        },
+        "hood": {
+          "provenance": "photo_confirmed",
+          "score": 1.0
+        },
+        "radiator": {
+          "provenance": "claimed_only",
+          "score": 1.0
+        }
+      },
+      "estimated_cost_low": 1755.0,
+      "estimated_cost_high": 2437.5,
+      "policy_limit": 25000,
+      "exceeds_limit": false,
+      "insurable_amount": 2437.5
+    },
+    "priority_result": {
+      "priority": "high",
+      "reason": "risk flag is not clean"
+    },
+    "recommendation": {
+      "recommended_action": "deny",
+      "recommended_amount": null,
+      "reason": "Hard fraud signal(s) ['claim_frequency']: 10 claims filed by this policyholder within the last 365 days: ['CLM-C3814923', 'CLM-225222F9', 'CLM-03AEE2C4', 'CLM-364061A2', 'CLM-65B37BD4', 'CLM-7D412C55', 'CLM-37118C7E', 'CLM-7F9CD73C', 'CLM-7B9C7D27', 'CLM-B3CCABFD']."
+    },
+    "queued_at": "2026-07-30T03:57:48.779980",
+    "resolved_at": "2026-07-30T03:57:48.779980"
+  }
+}

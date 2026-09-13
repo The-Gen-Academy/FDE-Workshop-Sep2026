@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>File a Claim — Meridian Auto Insurance</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="page">
+    <div class="brand">Meridian Insurance</div>
+    <div id="content"></div>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script>
+    const content = document.getElementById("content");
+
+    function renderSignIn() {
+      content.innerHTML = `
+        <div class="auth-kicker">Customer portal</div>
+        <h1>Sign in to Meridian</h1>
+        <p class="subtitle">Demo sign-in only — no real credentials are required.</p>
+        <button class="primary" id="clientSignIn">Sign in as client</button>`;
+      document.getElementById("clientSignIn").addEventListener("click", () => {
+        localStorage.setItem("claims_demo_role", "client");
+        render();
+      });
+    }
+
+    function renderStart() {
+      content.innerHTML = `
+        <h1>File a Claim</h1>
+        <p class="subtitle">This takes about 10 minutes. We'll ask about what happened, your policy, and any photos you have in the conversation.</p>
+        <button class="primary" id="startBtn">Start a claim</button>`;
+      document.getElementById("startBtn").addEventListener("click", async () => {
+        const btn = document.getElementById("startBtn");
+        btn.disabled = true;
+        btn.textContent = "Starting…";
+        try {
+          const { session_id } = await apiPostJson("/api/session", {});
+          localStorage.setItem("claims_session_id", session_id);
+          location.href = "chat.html";
+        } catch (e) {
+          btn.disabled = false;
+          btn.textContent = "Start a claim";
+          alert("Something went wrong starting your claim. Please try again in a moment.");
+        }
+      });
+    }
+
+    function renderWelcomeBack() {
+      content.innerHTML = `
+        <h1>Welcome back</h1>
+        <p class="subtitle">Looks like you have a claim in progress.</p>
+        <div style="display:flex; flex-direction:column; gap:14px;">
+          <button class="primary" id="continueBtn">Continue my claim</button>
+          <button class="secondary" id="newBtn">Start a new claim instead</button>
+        </div>`;
+      document.getElementById("continueBtn").addEventListener("click", () => {
+        location.href = "chat.html";
+      });
+      document.getElementById("newBtn").addEventListener("click", () => {
+        localStorage.removeItem("claims_session_id");
+        render();
+      });
+    }
+
+    function render() {
+      const signedIn = localStorage.getItem("claims_demo_role") === "client";
+      if (!signedIn) {
+        renderSignIn();
+      } else if (localStorage.getItem("claims_session_id")) {
+        renderWelcomeBack();
+      } else {
+        renderStart();
+      }
+    }
+
+    render();
+  </script>
+</body>
+</html>

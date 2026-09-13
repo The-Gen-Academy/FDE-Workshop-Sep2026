@@ -1,0 +1,30 @@
+[project]
+name = "claims-local-apps"
+version = "0.1.0"
+description = "Local customer and adjuster portals"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "claims-core==0.1.0",
+  "fastapi>=0.115.0",
+  "uvicorn>=0.30.0",
+  "python-multipart>=0.0.9",
+  "google-cloud-aiplatform[agent_engines]>=1.112.0,<2",
+  "google-genai>=1.0.0",
+]
+
+[project.optional-dependencies]
+local-agent = ["insurance-claim-agent==0.1.0"]
+
+[tool.uv.sources]
+claims-core = { workspace = true }
+insurance-claim-agent = { workspace = true }
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = ["client_portal", "adjuster_portal"]
+module-root = ""
+source-exclude = [".env", ".DS_Store", "__pycache__"]
