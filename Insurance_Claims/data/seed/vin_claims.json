@@ -1,0 +1,133 @@
+{
+  "1HGCM82633A004352": {
+    "claims": [
+      {
+        "claim_id": "CLM-4F88A21C",
+        "policyholder_id": "CUST-5521",
+        "date": "2026-07-10"
+      },
+      {
+        "claim_id": "CLM-73BE764F",
+        "policyholder_id": "CUST-5521",
+        "date": "2026-07-27"
+      },
+      {
+        "claim_id": "CLM-ACFD247E",
+        "policyholder_id": "CUST-5521",
+        "date": "2026-07-28"
+      },
+      {
+        "claim_id": "CLM-0C5B9E25",
+        "policyholder_id": "CUST-5521",
+        "date": "2026-07-28"
+      },
+      {
+        "claim_id": "CLM-0E4CAEA4",
+        "policyholder_id": "CUST-5521",
+        "date": "2026-07-23"
+      },
+      {
+        "claim_id": "CLM-C3814923",
+        "policyholder_id": "CUST-5521",
+        "date": "2026-07-20"
+      },
+      {
+        "claim_id": "CLM-225222F9",
+        "policyholder_id": "CUST-5521",
+        "date": "2026-07-21"
+      },
+      {
+        "claim_id": "CLM-03AEE2C4",
+        "policyholder_id": "CUST-5521",
+        "date": "2026-07-22"
+      },
+      {
+        "claim_id": "CLM-364061A2",
+        "policyholder_id": "CUST-5521",
+        "date": "2026-07-23"
+      },
+      {
+        "claim_id": "CLM-7D412C55",
+        "policyholder_id": "CUST-5521",
+        "date": "2026-07-25"
+      },
+      {
+        "claim_id": "CLM-37118C7E",
+        "policyholder_id": "CUST-5521",
+        "date": "2026-07-26"
+      },
+      {
+        "claim_id": "CLM-7F9CD73C",
+        "policyholder_id": "CUST-5521",
+        "date": "2026-07-28"
+      },
+      {
+        "claim_id": "CLM-7B9C7D27",
+        "policyholder_id": "CUST-5521",
+        "date": "2026-07-15"
+      },
+      {
+        "claim_id": "CLM-B3CCABFD",
+        "policyholder_id": "CUST-5521",
+        "date": "2026-07-16"
+      },
+      {
+        "claim_id": "CLM-93776584",
+        "policyholder_id": "CUST-5521",
+        "date": "2026-07-27"
+      }
+    ]
+  },
+  "2T1BURHE0JC014589": {
+    "claims": [
+      {
+        "claim_id": "CLM-77001DE2",
+        "policyholder_id": "CUST-9999",
+        "date": "2025-11-02"
+      },
+      {
+        "claim_id": "CLM-88420AF1",
+        "policyholder_id": "CUST-7743",
+        "date": "2026-07-15"
+      },
+      {
+        "claim_id": "CLM-66C3ED16",
+        "policyholder_id": "CUST-7743",
+        "date": "2026-07-01"
+      },
+      {
+        "claim_id": "CLM-2D9EC576",
+        "policyholder_id": "CUST-7743",
+        "date": "2026-07-05"
+      },
+      {
+        "claim_id": "CLM-0649EB61",
+        "policyholder_id": "CUST-7743",
+        "date": "2026-07-10"
+      },
+      {
+        "claim_id": "CLM-D9528CAC",
+        "policyholder_id": "CUST-7743",
+        "date": "2026-07-11"
+      }
+    ]
+  },
+  "1FAKE00000000FAKE": {
+    "claims": [
+      {
+        "claim_id": "CLM-65B37BD4",
+        "policyholder_id": "CUST-5521",
+        "date": "2026-07-24"
+      }
+    ]
+  },
+  "3VWFE21C04M000123": {
+    "claims": [
+      {
+        "claim_id": "CLM-58A59B1F",
+        "policyholder_id": "CUST-3391",
+        "date": "2026-07-27"
+      }
+    ]
+  }
+}

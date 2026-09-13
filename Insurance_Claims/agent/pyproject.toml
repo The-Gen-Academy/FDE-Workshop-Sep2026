@@ -1,0 +1,24 @@
+[project]
+name = "insurance-claim-agent"
+version = "0.1.0"
+description = "Auto claims workflow for Vertex AI Agent Engine"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "claims-core==0.1.0",
+  # Workflow serialization on Agent Engine requires ADK 2.7 or later.
+  "google-adk[gcp]>=2.7.0,<3",
+  "google-cloud-aiplatform[agent_engines]>=1.112.0,<2",
+]
+
+[tool.uv.sources]
+claims-core = { workspace = true }
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "insurance_claim_agent"
+module-root = ""
+source-exclude = [".env", ".adk", ".DS_Store", "__pycache__"]

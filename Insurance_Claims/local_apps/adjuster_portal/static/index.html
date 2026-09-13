@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Adjuster Portal</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body.auth-page { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 24px; background: #f7f5f2; color: #2b2620; }
+    body.auth-page .auth-shell { width: 100%; max-width: 560px; }
+    body.auth-page .auth-card { background: #ffffff; border: 1px solid #e6e1da; border-radius: 12px; padding: 32px; box-shadow: 0 12px 30px rgba(43, 38, 32, 0.06); }
+    body.auth-page h1 { margin: 0 0 8px; font-size: 28px; line-height: 1.2; letter-spacing: -.02em; }
+    body.auth-page p { color: #74695f; margin: 0 0 24px; }
+    body.auth-page button { width: 100%; background: #b5562e; border: 0; border-radius: 12px; padding: 12px 20px; color: white; font: inherit; font-weight: 600; cursor: pointer; }
+    body.auth-page button:hover { background: #96431f; }
+    body.auth-page .brand { margin-bottom: 28px; color: #2b2620; font-size: 28px; line-height: 1.2; letter-spacing: -.02em; font-weight: 700; text-align: center; }
+    body.auth-page .auth-kicker { color: #b5562e; font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 8px; }
+    body.auth-page .auth-note { font-size: 13px; margin: 16px 0 0; }
+  </style>
+</head>
+<body class="auth-page">
+  <main class="auth-shell">
+    <div class="brand">Meridian Insurance</div>
+    <div class="auth-card">
+      <div class="auth-kicker">Internal portal</div>
+      <h1>Sign in to Meridian</h1>
+      <p>Review claims, manage policies, and record decisions.</p>
+      <button id="signIn">Sign in as adjuster</button>
+      <p class="auth-note">Demo access only — no real credentials are required.</p>
+    </div>
+  </main>
+  <script>
+    document.getElementById("signIn").addEventListener("click", () => {
+      localStorage.setItem("claims_demo_role", "adjuster");
+      location.href = "queue.html";
+    });
+  </script>
+</body>
+</html>

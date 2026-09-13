@@ -1,0 +1,47 @@
+{
+  "POL-100234": {
+    "policyholder_id": "CUST-5521",
+    "policyholder_name": "Helen Parr",
+    "vin": "1HGCM82633A004352",
+    "listed_drivers": ["Helen Parr", "Bob Parr"],
+    "coverage": {
+      "collision": true,
+      "comprehensive": true,
+      "deductible": 500,
+      "limits": 25000
+    },
+    "effective_date": "2025-01-01",
+    "expiration_date": "2027-01-01",
+    "exclusions": ["racing", "commercial_use", "unlisted_driver"]
+  },
+  "POL-100987": {
+    "policyholder_id": "CUST-7743",
+    "policyholder_name": "Lucius Best",
+    "vin": "2T1BURHE0JC014589",
+    "listed_drivers": ["Lucius Best"],
+    "coverage": {
+      "collision": true,
+      "comprehensive": false,
+      "deductible": 1000,
+      "limits": 15000
+    },
+    "effective_date": "2026-06-20",
+    "expiration_date": "2027-06-20",
+    "exclusions": ["racing", "commercial_use", "unlisted_driver"]
+  },
+  "POL-100555": {
+    "policyholder_id": "CUST-3391",
+    "policyholder_name": "Violet Parr",
+    "vin": "3VWFE21C04M000123",
+    "listed_drivers": ["Violet Parr"],
+    "coverage": {
+      "collision": true,
+      "comprehensive": true,
+      "deductible": 750,
+      "limits": 20000
+    },
+    "effective_date": "2025-05-01",
+    "expiration_date": "2026-05-01",
+    "exclusions": ["racing", "commercial_use", "unlisted_driver"]
+  }
+}

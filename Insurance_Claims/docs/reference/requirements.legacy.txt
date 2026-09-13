@@ -1,0 +1,10 @@
+# >=2.7.0 is a hard floor — see pyproject.toml's comment on this same line
+# (versions below it crash Agent Engine deployments of the Workflow graph
+# the instant intake_agent hands off to assessment_agent).
+google-adk[gcp]>=2.7.0
+fastapi>=0.115.0
+uvicorn>=0.30.0
+python-multipart>=0.0.9
+python-dotenv>=1.0.0
+filelock>=3.13.0
+google-cloud-storage>=2.10.0
